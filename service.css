@@ -100,6 +100,7 @@ body {
 .card:hover {
     transform: translateY(-10px);
     box-shadow: 0 15px 40px rgb(104, 103, 103);
+    scale: 1.05;
 }
 
 .card-icon {
@@ -163,4 +164,78 @@ body {
     text-align: center;
     padding-top: 2rem;
     border-top: 1px solid black;
+}
+
+
+@media (max-width: 768px) { /* 768px = tablets */
+    .navigation {
+        flex-direction: column;
+        padding: 0.8rem;
+    }
+
+    .nav-links {
+        gap: 0.8rem;
+    }
+
+    .main-title {
+        font-size: 1.6rem;
+    }
+    .main-description {
+        font-size: 1rem;
+    }
+    .main-section {
+        padding: 0rem 4rem;
+    }
+
+    .cardscontainer {
+        flex-direction: column;
+    }
+}
+
+
+@media (max-width: 480px) { /* 480px = phones */
+    .navigation {
+        flex-direction: column;
+        padding: 1rem;
+        gap: 10px;
+    }
+
+    .logo h2 {
+        font-size: 1.4rem;
+      /*display: none;  - if you want to remove something */ 
+    }
+    .nav-links {
+        flex-direction: column;
+        gap: 0.875rem;
+    }
+
+    .main-section {
+        padding: 10px;
+    }
+    .main-title {
+        font-size: 1.6rem;
+    }
+    .main-description {
+        font-size: 1rem;
+    }
+
+    .cardscontainer {
+        padding: 2rem 1rem;   
+    }
+    .card h3 {
+        font-size: 1.3rem;
+    }
+    .card p {
+        font-size: 0.875rem;
+    }
+
+    .footer {
+        padding: 2rem 1rem;
+    }
+    .footer-section h4 {
+        font-size: 1.1rem;
+    }
+    .footer-section p, .footer-section a {
+        font-size: 0.9rem;
+    }
 }

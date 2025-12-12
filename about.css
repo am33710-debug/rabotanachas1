@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI, Tahoma, Geneva, Verdana, sans-serif";
+    line-height: 1.6;
+    color: #333;
+}
+
+
+.navigation {
+    background: linear-gradient(135deg, #667eea, 0%, #764ba2);
+    display: flex;
+    padding: 1.5rem 3rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo p {
+    color: white; 
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+.nav-links a:hover {
+    background-color: #ffffff;
+    color: black;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px black;
+}
+.nav-links a:active {
+    transform: translateY(2px);
+    box-shadow: 0 1px 3px black;
+}
+
+
+.main-section {
+    background: linear-gradient(135deg, #ffffff 0%, #2109c2 100%);
+    height: 60vh;
+    text-align: center;
+    padding-top: 50px;
+    color: white;
+    font-weight: bold;
+}
+
+.main-title {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgb(57,57,57);
+}
+.main-description {
+    font-size: 1.3rem;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+
+.footer {
+    background: linear-gradient(135deg, #667eea, 0%, #200b35);
+    color: white;
+    padding: 3rem; 
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    gap: 3rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+.footer-section h4 {
+    color: #2109c2;
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+}
+.footer-section p {
+    color: lightgray;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+.footer-section a {
+    color: white;
+    text-decoration: none;
+    transition: all 0.3 ease;
+}
+.footer-section a:hover {
+    color: #2109c2;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 2rem;
+    border-top: 1px solid black;
+}
+
+
+@media (max-width: 768px) { /* 768px = tablets */
+    .navigation {
+        flex-direction: column;
+        padding: 0.8rem;
+    }
+
+    .nav-links {
+        gap: 0.8rem;
+    }
+
+    .main-title {
+        font-size: 1.6rem;
+    }
+    .main-description {
+        font-size: 1rem;
+    }
+    .main-section {
+        padding: 0rem 4rem;
+    }
+
+    .cardscontainer {
+        flex-direction: column;
+    }
+}
+
+
+@media (max-width: 480px) { /* 480px = phones */
+    .navigation {
+        flex-direction: column;
+        padding: 1rem;
+        gap: 10px;
+    }
+
+    .logo h2 {
+        font-size: 1.4rem;
+      /*display: none;  - if you want to remove something */ 
+    }
+    .nav-links {
+        flex-direction: column;
+        gap: 0.875rem;
+    }
+
+    .main-section {
+        padding: 10px;
+    }
+    .main-title {
+        font-size: 1.6rem;
+    }
+    .main-description {
+        font-size: 1rem;
+    }
+
+    .cardscontainer {
+        padding: 2rem 1rem;   
+    }
+    .card h3 {
+        font-size: 1.3rem;
+    }
+    .card p {
+        font-size: 0.875rem;
+    }
+
+    .footer {
+        padding: 2rem 1rem;
+    }
+    .footer-section h4 {
+        font-size: 1.1rem;
+    }
+    .footer-section p, .footer-section a {
+        font-size: 0.9rem;
+    }
+}
